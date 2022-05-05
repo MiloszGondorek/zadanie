@@ -1,0 +1,38 @@
+body{
+    background-color: #22272c;
+}
+.menu{
+    background-color: #2a4158;
+    width: fit-content;
+    display: block;
+    width: min(1000px, 80vw);
+    padding: 0px 80px;
+    padding-bottom: 120px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 80px;
+    margin-left: -80px;
+    font-size: 30px;
+    background-color: #18293b;
+}
+
+.links>p{
+    cursor: pointer;
+    color: #958a56;
+}
+
+.info{
+    color:#8c9ea3;
+    font-size: 20px;
+    margin-top: 100px;
+}

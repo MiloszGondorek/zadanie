@@ -1,0 +1,56 @@
+body {
+    background-color: #22272c;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #2a4158;
+    width: fit-content;
+    display: flex;
+    width: 100vw;
+    height: 80px;
+}
+
+header>p {
+    height: fit-content;
+    width: fit-content;
+    margin: auto 50px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.photos {
+    margin: auto;
+    margin-top: 100px;
+    width: 1000px;
+}
+
+.photo {
+    display: flex;
+    margin-top: 30px;
+    background-color: #2a4158;  
+}
+
+.photo img {
+    width: 500px;
+    height: 300px;
+    object-fit:cover;
+}
+
+.photo:nth-child(odd) {
+      background-color: #597387;
+}
+
+.photo p {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    margin: auto;
+    max-height: 200px;
+    overflow-y: auto;
+    font-size: 20px;
+}
