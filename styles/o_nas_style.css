@@ -1,47 +1,108 @@
-body{
-    background-color: #22272c;
-    padding: 0;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    font-family: 'Roboto';
 }
 
-header{
-    background-color: #2a4158;
+body {
+    background-color: #264653;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #2a9d8f;
     width: fit-content;
     display: flex;
     width: 100vw;
     height: 80px;
 }
 
-header>p{
+header>p {
     height: fit-content;
     width: fit-content;
     margin: auto 50px;
     cursor: pointer;
     font-size: 30px;
+    color: #e9c46a;
 }
 
-.info{
-    background-color: #2a4158;
-    width: 600px;
-    margin: auto;
+.info {
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 20px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    height: fit-content;
+    width: 90vw;
+    justify-content: space-evenly;
 }
 
-.info *{
+.infoContent {
+    background-color: #2a9d8f;
+    width: 600px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px 5px #2a9d9046;
+}
+
+.infoContent * {
     text-align: center;
 }
 
-.info p{
+.infoContent p {
     font-size: 25px;
-}
-.info h1{
-    font-size: 40px;
+    color: #f4a261;
 }
 
-.link{
+.infoContent h1 {
+    font-size: 32px;
+    background-color: #16665c;
+    margin-top: 0;
+    padding: 5px 0px;
+    color: #e9c46a;
+}
+
+.link {
     cursor: pointer;
+    color: #f4a261;
+}
+
+@media screen and (max-width: 1450px) {
+    .info {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .info {
+        flex-direction: column;
+        margin: auto;
+        width: fit-content;
+    }
+
+    .infoContent {
+        margin: 40px 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header{
+        justify-content: space-between;
+        width: calc(100vw - 60px);
+        padding: 0 30px;
+    }
+    header p{
+        font-size: max(22px,3.75vw);
+        margin: auto 0;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .infoContent{
+        width: 92vw;
+    }
 }

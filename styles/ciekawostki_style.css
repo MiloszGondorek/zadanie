@@ -1,51 +1,115 @@
-body{
-    background-color: #22272c;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    font-family: 'Roboto';
+}
+
+body {
+    background-color: #264653;
     padding: 0;
     margin: 0;
 }
 
-header{
-    background-color: #2a4158;
+header {
+    background-color: #2a9d8f;
     width: fit-content;
     display: flex;
     width: 100vw;
     height: 80px;
 }
 
-header>p{
+header>p {
     height: fit-content;
     width: fit-content;
     margin: auto 50px;
     cursor: pointer;
     font-size: 30px;
+    color: #e9c46a;
 }
 
-.curiosities, .links{
-    background-color: #2a4158;
+.curiosities,
+.links {
+    background-color: #2a9d8f;
     width: 1200px;
     margin: auto;
     border-radius: 20px;
-    padding-bottom: 20px;
-    padding-top: 5px;
     margin-top: 50px;
+    overflow: hidden;
+    box-shadow: 0px 0px 25px 5px #2a9d9046;
 }
 
-.curiosities *, .links *{
+.curiosities *,
+.links * {
     text-align: center;
 }
 
-.curiosities p, .links a{
-    font-size: 25px;
+.curiosities p,
+.links a {
+    font-size: 22px;
     width: 80%;
-    margin: 15px auto;
-}
-.curiosities h1, .links h1{
-    font-size: 40px;
+    margin: auto;
+    padding: 30px 0;
+    color: #f4a261;
 }
 
-.links a{
-    display: block;
+.curiosities p:nth-child(odd),
+.links a:nth-child(odd) {
     width: 80%;
-    color:#958a56;
+    padding: 30px 10%;
+    background-color: #1e756a;
+    color: #f4a261;
+}
+
+.curiosities h1,
+.links h1 {
+    font-size: 32px;
+    background-color: #16665c;
+    margin: 0;
+    padding: 15px 0px;
+    color: #e9c46a;
+}
+
+.links a {
+    display: block;
     text-decoration: none;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .curiosities,
+    .links {
+        width: 92vw;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    header {
+        justify-content: space-between;
+        width: calc(100vw - 60px);
+        padding: 0 30px;
+    }
+
+    header p {
+        font-size: max(22px, 3.75vw);
+        margin: auto 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .curiosities h1,
+    .links h1{
+        font-size: max(25px,4.5vw);
+    }
+
+    .curiosities p,
+    .links a {
+        font-size: max(17px,3.14vw);
+        padding: 12px 0px;
+    }
+    .curiosities p:nth-child(odd),
+    .links a:nth-child(odd) {
+        padding: 12px 10%;
+    }
 }
