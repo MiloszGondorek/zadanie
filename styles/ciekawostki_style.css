@@ -8,6 +8,9 @@ body {
     background-color: #264653;
     padding: 0;
     margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    padding-bottom: 40px;
 }
 
 header {

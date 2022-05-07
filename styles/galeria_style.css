@@ -35,7 +35,7 @@ header>p {
     margin-top: 100px;
     display: grid;    
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 50px;
+    row-gap: 120px;
     justify-content: center;
     max-width: 1800px;
 }
@@ -45,22 +45,20 @@ header>p {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    background-color: #2a9d8f;  
     margin: auto;
-    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0px 0px 25px 5px #2a9d9046;
 }
 
 .photo img {
     display: block;
     width: 500px;
-    height: 300px;
+    height: 500px;
     object-fit:cover;
     
 }
 
 .photo p {
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,6 +67,10 @@ header>p {
     overflow-y: auto;
     font-size: 20px;
     color:#f4a261;
+    background-color: #2a9d8f;  
+    box-shadow: 0px 0px 25px 5px #2a9d9046;
+    width: 500px;
+    text-align: center;
 }
 
 @media screen and (max-width: 1700px) {
@@ -100,5 +102,13 @@ header>p {
 @media screen and (max-width: 600px) {
     .photo{
         width: 84vw;
+    }
+    .photo img{
+        width: 84vw;
+        height: 84vw;
+    }
+    .photo p{
+        width: 84vw;
+        font-size: max(15px ,3.33vw);
     }
 }

@@ -30,14 +30,12 @@ header>p {
 }
 
 .info {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
     height: fit-content;
     width: 90vw;
     justify-content: space-evenly;
+    margin: auto;
+    margin-top: 150px;
 }
 
 .infoContent {
@@ -57,10 +55,26 @@ header>p {
     color: #f4a261;
 }
 
+.data{
+    margin: auto;
+    height: calc(100% - 108px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 0;
+}
+.data p{
+    margin: 10px 0;
+}
+
+.source p{
+    cursor: pointer;
+}
+
 .infoContent h1 {
     font-size: 32px;
     background-color: #16665c;
-    margin-top: 0;
+    margin: 0;
     padding: 5px 0px;
     color: #e9c46a;
 }
