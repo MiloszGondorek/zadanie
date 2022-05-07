@@ -13,12 +13,9 @@ body {
     width: fit-content;
     display: block;
     width: min(1000px, 80vw);
-    padding: 0px 80px;
-    padding-bottom: 120px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding: 60px;
+    padding-top: 0;
+    margin: auto;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 25px 5px #2a9d9046;
@@ -40,9 +37,9 @@ body {
 }
 
 .info {
+    margin-top: 50px;
     color: #e8b946;
     font-size: 20px;
-    margin-top: 100px;
 }
 
 @media screen and (max-width: 1000px) {
